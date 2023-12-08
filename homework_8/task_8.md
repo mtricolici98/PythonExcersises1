@@ -1,13 +1,5 @@
-Write a program that will ask the user to input a temperature value in the console.
+Write a program that generates a random number between 1 and 100 and lets the user guess the number.
 
-The program should show a message depending on the temperature value:
+The program should provide feedback ("**higher**" or "**lower**") until the user guesses the correct number.
 
-If the temperature is:
-
-* -infinite to -10(incl) - Extremely freezing
-* -10 to 0(incl.) - Freezing
-* 0 to 10(incl.) - Cold
-* 10 to 20(incl.) - Comfortable
-* 20 to 30(incl.) - Warm
-* 30 to 40(incl.) - Extremely Warm
-* 40 to infinte - Apocalypse
+The program should also keep track of the **number of guesses** it takes for the user to guess correctly.
