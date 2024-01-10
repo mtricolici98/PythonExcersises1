@@ -101,7 +101,6 @@ def decrease_enemy_position(by_how_much):
         enemy['position'].y += by_how_much * dt
 
 
-
 points = 0
 
 while running:
@@ -116,9 +115,10 @@ while running:
     check_out_of_bounds(player_pos)
 
     # Draw the objects
-    pygame.draw.circle(screen, "red", player_pos, player_size)
+    pygame.draw.circle(screen, "green", player_pos, player_size)
 
     for enemy in list(enemies_list):
+
         if detect_collision(player_pos, enemy['position'], player_size, enemy['radius']):
             # We are killing an emey
             enemies_list.remove(enemy)
